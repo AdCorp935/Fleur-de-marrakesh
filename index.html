@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fleur de Marrakech — Restaurant marocain, Paris 16ᵉ</title>
+<meta name="description" content="Fleur de Marrakech, restaurant marocain à Paris 16ᵉ : tajines mijotés, couscous, pastilla et pâtisseries au miel, préparés chaque jour selon des recettes de famille.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22-50 -50 100 100%22><circle r=%2250%22 fill=%22%231d5a73%22/><g fill=%22none%22 stroke=%22%23fff%22 stroke-width=%225%22><path d=%22M0,-8 C9,-17 9,-29 0,-40 C-9,-29 -9,-17 0,-8Z%22/><path transform=%22rotate(45)%22 d=%22M0,-8 C9,-17 9,-29 0,-40 C-9,-29 -9,-17 0,-8Z%22/><path transform=%22rotate(90)%22 d=%22M0,-8 C9,-17 9,-29 0,-40 C-9,-29 -9,-17 0,-8Z%22/><path transform=%22rotate(135)%22 d=%22M0,-8 C9,-17 9,-29 0,-40 C-9,-29 -9,-17 0,-8Z%22/><path transform=%22rotate(180)%22 d=%22M0,-8 C9,-17 9,-29 0,-40 C-9,-29 -9,-17 0,-8Z%22/><path transform=%22rotate(225)%22 d=%22M0,-8 C9,-17 9,-29 0,-40 C-9,-29 -9,-17 0,-8Z%22/><path transform=%22rotate(270)%22 d=%22M0,-8 C9,-17 9,-29 0,-40 C-9,-29 -9,-17 0,-8Z%22/><path transform=%22rotate(315)%22 d=%22M0,-8 C9,-17 9,-29 0,-40 C-9,-29 -9,-17 0,-8Z%22/></g></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================ EN-TÊTE ============================ -->
+<header class="header" id="header">
+  <button class="hbtn" id="menuOpen" aria-label="Ouvrir le menu" aria-controls="panel" aria-expanded="false">
+    <span class="hbtn-ico hbtn-burger"><span></span><span></span><span></span></span>
+    <span>Menu</span>
+  </button>
+  <a href="#top" class="minilogo" id="minilogo" aria-label="Fleur de Marrakech — accueil">
+    <span class="minilogo-flower" data-flower="anim"></span>
+    <span class="wordmark">FLEUR DE MARRAKECH</span>
+  </a>
+  <a href="#reserver" class="hbtn hbtn-right">
+    <span class="hbtn-label">Réserver une table</span>
+    <span class="hbtn-ico">→</span>
+  </a>
+</header>
+
+<!-- ============================ MENU LATÉRAL ============================ -->
+<div class="overlay" id="overlay"></div>
+<aside class="panel" id="panel" aria-hidden="true">
+  <div class="panel-top">
+    <span class="panel-flower" data-flower="#ffffff"></span>
+    <button class="panel-close" id="menuClose" aria-label="Fermer le menu">×</button>
+  </div>
+  <nav class="panel-nav">
+    <a href="#top">Accueil</a>
+    <a href="#histoire">Histoire</a>
+    <a href="#carte">La carte</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#reserver">Réserver</a>
+  </nav>
+  <div class="panel-contact">
+    <a href="tel:0142243491" class="panel-tel">01 42 24 34 91</a>
+    <a href="mailto:contact@fleurdemarrakech.fr" class="panel-mail">contact@fleurdemarrakech.fr</a>
+    <div class="panel-social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Google</a>
+    </div>
+  </div>
+</aside>
+
+<main>
+<!-- ============================ ACCUEIL ============================ -->
+<section id="top" class="hero">
+  <div class="hero-frame">
+    <div class="hero-stage">
+      <div class="hero-bg" data-parallax="0.25">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T1dNJjz_7XYjJXR-N-OiKYqyZRMUtWb5b-FVBgNR0VXAlE1qkWWC8CcusV1GksDDWqKWqBd-Bs4kTmNocUIR3x6yVNXSifNL5y0_4yQcssQZg_y0qpKax6hJGb7BJPbMWN4sgmp7sH1xcp=w2400-h1800-k-no" alt="La salle du restaurant Fleur de Marrakech" fetchpriority="high">
+      </div>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+        <div class="hero-main">
+          <div class="status" data-intro="1">
+            <span class="status-dot" id="statusDot"></span>
+            <span id="statusText">Horaires</span>
+          </div>
+          <div class="hero-title" data-parallax="-0.1">
+            <span class="hero-pre" data-intro="1">FLEUR DE</span>
+            <h1 data-intro="2">MARRAKECH</h1>
+            <div class="hero-sub" data-intro="3">
+              <span class="hero-line"></span>
+              <span>RESTAURANT MAROCAIN</span>
+              <span class="hero-sub-flower" data-flower="#e8c98f"></span>
+            </div>
+          </div>
+          <div class="hero-lead" data-intro="4">
+            <h2>Là où les épices racontent une histoire</h2>
+            <p>Tajines mijotés, couscous du vendredi et pâtisseries au miel, préparés chaque jour selon des recettes de famille.</p>
+          </div>
+          <div class="hero-ctas" data-intro="5">
+            <a href="#carte" class="btn-light">
+              Voir la carte
+              <span class="btn-ico">→</span>
+            </a>
+            <a href="tel:0142243491" class="btn-ghost">01 42 24 34 91</a>
+          </div>
+        </div>
+
+        <a href="#galerie" class="hero-card" data-intro="5">
+          <div class="hero-card-img" style="background-image:url(https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkzDIH-Pl1dgckDUtaFNkpQdq5OrnxD99HgK99Vzsq06LqLzD6iVa338Qkc_85vg30WtT6VO-EdipaNiNqReaGsuXo_WAc8FOhZHgsLWvRrOfnnJjiP_Zps7kQEHcx7xL5kRIslDt5bbI=w1080-h1920-k-no)"></div>
+          <div class="hero-card-body">
+            <div>
+              <span class="hero-card-kicker">FAIT MAISON</span>
+              <span class="hero-card-title">Nos plats</span>
+            </div>
+            <span class="hero-card-arrow">↗</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="rating" data-intro="5">
+        <div class="avatars">
+          <span style="background:#e8c98f">S</span>
+          <span style="background:#9cc6d4">K</span>
+          <span style="background:#e2a88a">M</span>
+        </div>
+        <div class="rating-text">
+          <span class="rating-score">4,8 <span class="gold">★</span> <small>· avis Google</small></span>
+          <span class="rating-addr">9 rue de l'Annonciation · Paris 16ᵉ</span>
+        </div>
+      </div>
+
+      <div class="marquee" data-intro="5" aria-hidden="true">
+        <div class="marquee-track" id="marquee"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ HISTOIRE ============================ -->
+<section id="histoire" class="story">
+  <div class="story-text">
+    <span class="kicker" data-reveal>NOTRE HISTOIRE</span>
+    <h2 class="h-section" data-reveal>Un coin de Marrakech, à votre table</h2>
+    <p class="story-lead" data-reveal>Chez Fleur de Marrakech, la cuisine se fait lentement. Les épices sont torréfiées sur place, la semoule roulée à la main et le thé servi à la menthe fraîche, comme dans les maisons de la médina.</p>
+    <div class="stats" data-reveal>
+      <div><span class="stat-num">100%</span><span class="stat-label">fait maison</span></div>
+      <div><span class="stat-num">7 h</span><span class="stat-label">de cuisson pour la tangia</span></div>
+      <div><span class="stat-num">Halal</span><span class="stat-label">viandes certifiées</span></div>
+    </div>
+  </div>
+  <div class="story-photos" data-reveal>
+    <div class="photo">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TbX_hFqUU3_puP5uRQtYhEfugDMYweBGnFmRAbFgY8pKZF29mTMUqqRfXi9aeNzckDgwq9hR494GCmMAlB-NRsOVHyBrBBLMajQxh5cQ_v7fADO-UDV3W2X4qP3Ab2GrSuEAr7nIEdy1WX=w1200-h1600-k-no" alt="Salle du restaurant" loading="lazy">
+    </div>
+    <div class="photo photo-offset">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ri-26KRYytb9lwDR2LHKMLm7WozlnGk3d0-R9TpeNUfdf9zsVFHUfLXuIW4qxM0GEQrY5nN8nLMbwojS4sWVAHWwRdLsl4WnjJ5XTqFJ6tDDspYi0j0fhzGVCEmU0aHq_Y-emmN0zgN4Ja=w1200-h1600-k-no" alt="Service du thé" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CARTE ============================ -->
+<section id="carte" class="menu">
+  <div class="menu-inner">
+    <div class="menu-head">
+      <div class="menu-titles">
+        <span class="kicker kicker-light" data-reveal>LA CARTE</span>
+        <h2 class="h-section" data-reveal>Saveurs de la médina</h2>
+      </div>
+      <div class="tabs" role="tablist" data-reveal id="tabs">
+        <button role="tab" data-tab="entrees">Entrées</button>
+        <button role="tab" data-tab="tajines" class="is-active" aria-selected="true">Tajines</button>
+        <button role="tab" data-tab="couscous">Couscous</button>
+        <button role="tab" data-tab="desserts">Desserts &amp; thé</button>
+      </div>
+    </div>
+    <div class="dishes" id="dishes" role="tabpanel"></div>
+    <p class="menu-note" data-reveal>Formule midi du lundi au vendredi : entrée + plat ou plat + dessert, 19 €.</p>
+  </div>
+</section>
+
+<!-- ============================ GALERIE ============================ -->
+<section id="galerie" class="gallery">
+  <div class="gallery-head">
+    <div class="gallery-titles">
+      <span class="kicker" data-reveal>GALERIE</span>
+      <h2 class="h-section" data-reveal>L'art de recevoir</h2>
+    </div>
+    <p data-reveal>Zellige, lanternes en cuivre et banquettes brodées : une salle pensée pour prendre son temps.</p>
+  </div>
+  <div class="gallery-grid">
+    <figure class="tile" data-reveal>
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkzDIH-Pl1dgckDUtaFNkpQdq5OrnxD99HgK99Vzsq06LqLzD6iVa338Qkc_85vg30WtT6VO-EdipaNiNqReaGsuXo_WAc8FOhZHgsLWvRrOfnnJjiP_Zps7kQEHcx7xL5kRIslDt5bbI=w1080-h1920-k-no" alt="Nos plats" loading="lazy">
+      <figcaption class="tile-label">Nos plats</figcaption>
+    </figure>
+    <figure class="tile" data-reveal>
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SmMtRnDPCmzrlNJshfnMuNketN_wskmt5QfxU0SlxL7hHZThYdpp1OGUgOsGDeRr5MFmJ_9vKH1tBPPOlVh0QCrxWvo0dRVUpQVMz_sK4zMsi7VdMgDreHm7R-GhWukew7GSDffQ0EH0Jw=w1200-h1600-k-no" alt="La salle et ses lanternes" loading="lazy">
+      <figcaption class="tile-label">La salle</figcaption>
+    </figure>
+    <figure class="tile" data-reveal>
+      <img src="https://images.unsplash.com/photo-1574810134700-b6ba48d151a0?fm=jpg&amp;q=70&amp;w=1400&amp;auto=format&amp;fit=crop" alt="Plateau de pâtisseries marocaines" loading="lazy">
+      <figcaption class="tile-label">Pâtisseries</figcaption>
+      <a class="tile-credit" href="https://unsplash.com/@rachidnl" target="_blank" rel="noopener">Photo : Rachid Oucharia / Unsplash</a>
+    </figure>
+    <figure class="tile" data-reveal>
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLd09RA9Sfbc1kqF_f56FYQkVrvEQ5hyKeqY-lUgyTgwyrQ4ufVCfq9fgmcTrlzcoinFd-XZu6njXC_lqieR7E5Uf2vdY8slNLLUYrmwtDp4lL_8HdiYH6G6xFvOmq1u-txxcf8FFeAXxH=w1200-h1600-k-no" alt="Service du thé à la menthe" loading="lazy">
+      <figcaption class="tile-label">Thé à la menthe</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================ AVIS ============================ -->
+<section class="reviews" aria-label="Avis clients">
+  <figure class="review" data-reveal>
+    <span class="stars">★★★★★</span>
+    <blockquote>« Le meilleur couscous que j'ai mangé hors du Maroc. Accueil chaleureux, on se sent en famille. »</blockquote>
+    <figcaption>Sarah L. — Google</figcaption>
+  </figure>
+  <figure class="review" data-reveal>
+    <span class="stars">★★★★★</span>
+    <blockquote>« La pastilla au poulet est incroyable, et le décor nous transporte directement dans la médina. »</blockquote>
+    <figcaption>Karim B. — TripAdvisor</figcaption>
+  </figure>
+  <figure class="review" data-reveal>
+    <span class="stars">★★★★★</span>
+    <blockquote>« Tajine d'agneau fondant, thé parfait. Une adresse où l'on revient sans hésiter. »</blockquote>
+    <figcaption>Marie D. — Google</figcaption>
+  </figure>
+</section>
+
+<!-- ============================ RÉSERVER ============================ -->
+<section id="reserver" class="booking">
+  <div class="booking-inner">
+    <div class="booking-info">
+      <span class="kicker kicker-pale" data-reveal>RÉSERVATION</span>
+      <h2 class="h-section" data-reveal>Réservez votre table</h2>
+      <div class="infos" data-reveal>
+        <div><span class="info-k">ADRESSE</span><span>9 rue de l'Annonciation<br>75016 Paris</span></div>
+        <div><span class="info-k">TÉLÉPHONE</span><a href="tel:0142243491">01 42 24 34 91</a></div>
+        <div><span class="info-k">MIDI</span><span>Mar – Dim<br>12h00 – 14h30</span></div>
+        <div><span class="info-k">SOIR</span><span>Mar – Sam<br>19h00 – 23h00</span></div>
+      </div>
+    </div>
+    <div class="booking-card" data-reveal>
+      <form class="form" id="bookingForm">
+        <label class="full">Nom<input name="nom" required placeholder="Votre nom" autocomplete="name"></label>
+        <label class="full">Téléphone<input name="tel" required type="tel" placeholder="06 00 00 00 00" autocomplete="tel"></label>
+        <label>Date<input name="date" required type="date" id="dateInput"></label>
+        <label>Heure
+          <select name="heure">
+            <option>12h00</option><option>12h30</option><option>13h00</option>
+            <option>19h30</option><option selected>20h00</option><option>20h30</option><option>21h00</option>
+          </select>
+        </label>
+        <div class="full guests-field">
+          <span>Couverts</span>
+          <div class="guests" id="guests" role="radiogroup" aria-label="Nombre de couverts"></div>
+        </div>
+        <button type="submit" class="submit">Confirmer la réservation <span>→</span></button>
+      </form>
+      <div class="sent" id="sent" hidden>
+        <span class="sent-flower" data-flower="#1d5a73"></span>
+        <h3>Merci, à très vite</h3>
+        <p>Nous vous rappelons pour confirmer votre table pour <strong id="guestCount">2</strong> personne(s).</p>
+        <button type="button" class="again" id="again">Nouvelle réservation</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============================ PIED DE PAGE ============================ -->
+<footer class="footer">
+  <div class="footer-brand" data-reveal>
+    <span class="footer-flower" data-flower="#1d5a73"></span>
+    <span class="footer-name">FLEUR DE<br>MARRAKECH</span>
+    <span class="footer-sub">RESTAURANT MAROCAIN</span>
+  </div>
+  <div class="footer-bar">
+    <span>© 2026 Fleur de Marrakech</span>
+    <div class="footer-links"><a href="#carte">La carte</a><a href="#reserver">Réserver</a><a href="#">Mentions légales</a></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
